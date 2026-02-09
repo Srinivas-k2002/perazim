@@ -1,0 +1,33 @@
+# Quick Guide: Add Your Own Voice 🎙️
+
+## Simple 3-Step Setup
+
+### 1. Create Audio Folder
+Make a folder: `c:\Users\srini\OneDrive\Documents\perazim\audio\`
+
+### 2. Record Your Voice
+Use Windows Voice Recorder app:
+- Record: "Welcome! welcome kutty pappa!"
+- Save as MP3 or WAV
+- Keep it under 10 seconds
+
+### 3. Save the File
+- For all users: Save as `audio/welcome.mp3`
+- For specific user: Save as `audio/welcome-john.mp3` (use lowercase username)
+
+## How It Works
+
+The system tries in this order:
+1. **First**: `audio/welcome-{username}.mp3` (personalized)
+2. **Second**: `audio/welcome.mp3` (generic)  
+3. **Third**: Text-to-speech (automatic fallback)
+
+## Test It
+
+Currently uses text-to-speech saying:
+**"Welcome [username]! welcome kutty pappa!"**
+
+Add your audio files to hear your own voice instead! ✨
+
+## No Files? No Problem!
+If you don't add audio files, it automatically uses text-to-speech. Everything works either way!

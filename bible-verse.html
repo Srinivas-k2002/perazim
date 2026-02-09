@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Bible Verse - Perazim Prayer House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;600;700&family=Noto+Sans+Tamil:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="bible-verse-styles.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="background-container">
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+        <div class="star star1"></div>
+        <div class="star star2"></div>
+        <div class="star star3"></div>
+        <div class="star star4"></div>
+        <div class="star star5"></div>
+        <div class="star star6"></div>
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="verse-container">
+        <!-- Header -->
+        <div class="header">
+            <h1 class="title">📖 Daily Bible Verse</h1>
+            <p class="subtitle">Perazim Prayer House</p>
+        </div>
+
+        <!-- Mascot Character -->
+        <div class="mascot-container">
+            <div class="mascot">
+                <div class="mascot-head">
+                    <div class="eye eye-left">
+                        <div class="pupil"></div>
+                    </div>
+                    <div class="eye eye-right">
+                        <div class="pupil"></div>
+                    </div>
+                    <div class="mouth"></div>
+                    <div class="blush blush-left"></div>
+                    <div class="blush blush-right"></div>
+                </div>
+                <div class="mascot-body"></div>
+                <div class="mascot-arm arm-left"></div>
+                <div class="mascot-arm arm-right"></div>
+            </div>
+        </div>
+
+        <!-- See Button (Initial State) -->
+        <div class="see-button-container" id="seeButtonContainer">
+            <button class="see-button" id="seeButton">
+                <span class="button-text">See Today's Verse</span>
+                <span class="button-icon">✨</span>
+                <div class="button-shine"></div>
+            </button>
+            <p class="instruction-text">Click to reveal God's word for you today</p>
+        </div>
+
+        <!-- Verse Display Area (Hidden Initially) -->
+        <div class="verse-display" id="verseDisplay">
+            <div class="verse-card">
+                <div class="verse-icon">📜</div>
+                <div class="verse-text" id="verseText"></div>
+                <div class="verse-reference" id="verseReference"></div>
+                <div class="verse-translation" id="verseTranslation"></div>
+
+                <!-- Voice Controls -->
+                <div class="voice-controls">
+                    <button class="voice-button" id="playVoiceBtn" title="Play Tamil Voice">
+                        <span class="voice-icon">🔊</span>
+                        <span class="voice-label">Listen in Tamil</span>
+                        <div class="voice-wave"></div>
+                    </button>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="action-btn new-verse-btn" id="newVerseBtn">
+                        <span>🔄 New Verse</span>
+                    </button>
+                    <button class="action-btn share-btn" id="shareBtn">
+                        <span>💙 Share</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div class="loading-spinner" id="loadingSpinner">
+            <div class="spinner"></div>
+            <p>Fetching God's word...</p>
+        </div>
+
+        <!-- Back Button -->
+        <div class="back-button-container">
+            <button class="back-button" id="backButton">
+                <span class="back-icon">🏠</span>
+                <span class="back-text">Back to Welcome</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Celebration Overlay -->
+    <div class="celebration-overlay" id="celebrationOverlay"></div>
+
+    <script src="bible-verse-script.js"></script>
+</body>
+
+</html>

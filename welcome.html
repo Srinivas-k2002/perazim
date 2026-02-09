@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Perazim Prayer House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="welcome-styles.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="background-container">
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+        <div class="star star1"></div>
+        <div class="star star2"></div>
+        <div class="star star3"></div>
+        <div class="star star4"></div>
+        <div class="star star5"></div>
+        <div class="star star6"></div>
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
+    </div>
+
+    <!-- Welcome Container -->
+    <div class="welcome-container">
+        <!-- Animated Mascot -->
+        <div class="mascot-container">
+            <div class="mascot celebrating">
+                <div class="mascot-head">
+                    <div class="eye eye-left">
+                        <div class="pupil"></div>
+                    </div>
+                    <div class="eye eye-right">
+                        <div class="pupil"></div>
+                    </div>
+                    <div class="mouth happy"></div>
+                    <div class="blush blush-left"></div>
+                    <div class="blush blush-right"></div>
+                </div>
+                <div class="mascot-body"></div>
+                <div class="mascot-arm arm-left waving"></div>
+                <div class="mascot-arm arm-right waving"></div>
+            </div>
+        </div>
+
+        <!-- Welcome Message -->
+        <div class="welcome-content">
+            <h1 class="welcome-title">Welcome!</h1>
+            <div class="username-display">
+                <span class="greeting-text">Hello,</span>
+                <span class="username" id="displayUsername">Friend</span>
+                <span class="emoji">👋</span>
+            </div>
+            <p class="welcome-message">welcome kutty pappa 🎉</p>
+
+            <!-- Voice Control -->
+            <button class="voice-button" id="playVoice">
+                <span class="speaker-icon">🔊</span>
+                <span class="button-text">Play Welcome Message</span>
+            </button>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="action-btn primary">
+                    <span class="btn-icon">🏠</span>
+                    <span>Go to Home</span>
+                </button>
+                <button class="action-btn secondary" id="logoutBtn">
+                    <span class="btn-icon">👋</span>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Celebration Elements -->
+        <div class="celebration-overlay" id="celebrationOverlay"></div>
+    </div>
+
+    <script src="welcome-script.js"></script>
+</body>
+
+</html>

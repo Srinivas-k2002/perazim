@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Login Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="login-styles.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="background-container">
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+        <div class="star star1"></div>
+        <div class="star star2"></div>
+        <div class="star star3"></div>
+        <div class="star star4"></div>
+        <div class="star star5"></div>
+        <div class="star star6"></div>
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
+    </div>
+
+    <!-- Login Container -->
+    <div class="login-container">
+        <!-- Character Mascot -->
+        <div class="mascot-container">
+            <div class="mascot">
+                <div class="mascot-head">
+                    <div class="eye eye-left">
+                        <div class="pupil"></div>
+                    </div>
+                    <div class="eye eye-right">
+                        <div class="pupil"></div>
+                    </div>
+                    <div class="mouth"></div>
+                    <div class="blush blush-left"></div>
+                    <div class="blush blush-right"></div>
+                </div>
+                <div class="mascot-body"></div>
+                <div class="mascot-arm arm-left"></div>
+                <div class="mascot-arm arm-right"></div>
+            </div>
+        </div>
+
+        <!-- Login Form -->
+        <div class="form-wrapper">
+            <div class="welcome-text">
+                <h1 class="title">Welcome Back!</h1>
+                <p class="subtitle">Perazim Prayer House</p>
+            </div>
+
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="username" class="form-label">
+                        <span class="label-icon">👤</span>
+                        Username
+                    </label>
+                    <div class="input-wrapper">
+                        <input type="text" id="username" name="username" class="form-input"
+                            placeholder="Enter your username" required>
+                        <div class="input-border"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">
+                        <span class="label-icon">🔒</span>
+                        Password
+                    </label>
+                    <div class="input-wrapper">
+                        <input type="password" id="password" name="password" class="form-input"
+                            placeholder="Enter your password" required>
+                        <button type="button" class="toggle-password" id="togglePassword">
+                            <span class="eye-icon">👁️</span>
+                        </button>
+                        <div class="input-border"></div>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="rememberMe">
+                        <span class="checkmark"></span>
+                        <span class="checkbox-label">Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="login-button">
+                    <span class="button-text">Let's Go!</span>
+                    <span class="button-icon">🚀</span>
+                    <div class="button-shine"></div>
+                </button>
+
+                <div class="signup-link">
+                    Don't have an account? <a href="#">Sign up here!</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Success Message -->
+        <div class="success-message" id="successMessage">
+            <div class="success-icon">✨</div>
+            <h2>Welcome!</h2>
+            <p>You're all set! Let's go!</p>
+        </div>
+    </div>
+
+    <script src="login-script.js"></script>
+</body>
+
+</html>
