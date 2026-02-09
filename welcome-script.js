@@ -89,7 +89,7 @@ function loadGenericAudio(username, voiceButton) {
 function playTextToSpeech(username, voiceButton) {
     if ('speechSynthesis' in window) {
         const utterance = new SpeechSynthesisUtterance();
-        utterance.text = `Welcome ${username}! welcome kutty pappa!`;
+        utterance.text = `Welcome ${username}! welcome Gods child!`;
         utterance.rate = 0.9;
         utterance.pitch = 1.1;
         utterance.volume = 1;
